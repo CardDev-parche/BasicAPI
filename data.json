@@ -2,19 +2,19 @@
     {
         "title":"MOBA",
         "subtitle":"เกมแนว MOBA หรือเรียกชื่อเต็มว่า (Multiplayer Online Battle Arena)",
-        "image_url":"https://images.unsplash.com/photo-1624138149925-6c1dd2d60460?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "image_url":"https://raw.githubusercontent.com/CardDev-parche/BasicAPI/main/Image%20Uploads/photo-1624138149925-6c1dd2d60460.jpg",
         "detail":"เกมแนว MOBA คือ เกมต่อสู้กันระหว่างสองฝ่ายและจะต้องเลือกตัวละครในการเล่น และในแต่ละตัวละครก็จะมีความสามารถไม่เหมือนกันเรียกว่าสกิล จำเป็นที่จะต้องใช้ทักษะในการเล่นและการเลือกซื้อไอเทมต่างๆ จากร้านค้าเพื่อเสริมความสามารถให้กับตัวละครนั้นๆเพื่อช่วยในการทำลายฐานอีกฝ่าย หรือสนับสนุนเพื่อนในทีม เมื่อใดที่เราทำลายฐานฝ่ายตรงข้ามจนหมดเราก็ชนะ โดยเกมนี้มักจะเป็นระบบออนไลน์ และใช้ความสามัคคีบวกการวางแผนพอสมควร"
     },
     {
         "title":"FPS",
         "subtitle":"เกมแนว FPS หรือเรียกชื่อเต็มว่า (First Person Shooter)",
-        "image_url":"https://images.unsplash.com/photo-1542751371-adc38448a05e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "image_url":"https://raw.githubusercontent.com/CardDev-parche/BasicAPI/main/Image%20Uploads/photo-1542751371-adc38448a05e.jpg",
         "detail":"FPS หรือที่เรียกกันว่า เกมยิงมุมมองบุคคลที่หนึ่ง หรือเรียกง่ายๆว่าเป็นวิดีโอเกมประเภทที่จุดศูนย์กลางอยู่ที่อาวุธปืน  โดยใช้อาวุธโจมตีมองผ่านจากดวงตาของตัวละครเอกในเกม  คล้ายมุมมองของภาพถ่ายซึ่งเกือบจะทั้งหมดองค์ประกอบหลักของเกมแนวนี้  คือการโจมตีโดยจะใช้อาวุธปืนเบารอบตัวที่สามารถพกพาไปได้เป็นหลัก  และเกมประเภทนี้ได้รับความนิยมอย่างมาก  เพราะจะให้ความรู้สึกเหมือนคุณเป็นตัวละครนั้นได้สวมบทบาทในเกมเล่นไปตามเกมหรือเนื้อเรื่องของเกม"
     },
     {
         "title":"MMORPG",
         "subtitle":"เกมแนว MMORPG หรือเรียกชื่อเต็มว่า (Massive Multiplayer Online Role-Playing Game)",
-        "image_url":"https://cdn.tigthai.com/imguploads/201912/18/0975551001576667926549_FF14NowHas18MPlayers_2.jpg",
+        "image_url":"https://raw.githubusercontent.com/CardDev-parche/BasicAPI/main/Image%20Uploads/0975551001576667926549_FF14NowHas18MPlayers_2.jpg",
         "detail":"MMORPG ย่อมาจากเกมเล่นตามบทบาทออนไลน์ที่มีผู้เล่นหลายคนซึ่งเป็นเกมออนไลน์ที่มีผู้เล่นจำนวนมาก เป็นเกมสวมบทบาททางคอมพิวเตอร์ ที่เกิดขึ้นในโลกเสมือนจริงออนไลน์ที่มีผู้เล่นหลายคนเข้ามาเล่นในเวลาเดียวกันนับร้อยหรือพันคน โดยผ่านระบบเครือข่ายคอมพิวเตอร์ขนาดใหญ่ และผู้เล่นแต่ละคนจะสวมบทบาทเป็นตัวละครตัวหนึ่งในโลกนั้นด้วย"
     }
 ]
