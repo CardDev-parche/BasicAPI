@@ -3,6 +3,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:layout/pages/detail.dart';
 
+import 'package:http/http.dart' as http;
+import 'dart:async';
+
 class HomePage extends StatefulWidget {
   //const HomePage({ Key? key }) : super(key: key);
 
@@ -20,18 +23,20 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: FutureBuilder(
-          builder: (context, snapshot) {
-            var data =
-                json.decode(snapshot.data.toString()); //[{MOBA},{},{},...]
+
+          // future: DefaultAssetBundle.of(context).loadString('assets/data.json'),  ***ของเดิมที่อ่านจากไฟล์ data.json จาก assets ***
+          future: getData(),
+          builder: (context,AsyncSnapshot snapshot) {
+            //var data = json.decode(snapshot.data.toString()); //ใช้คู่กับfuture: DefaultAssetBundle.of(context).loadString('assets/data.json')     //[{MOBA},{},{},...]
             return ListView.builder(
               itemBuilder: (BuildContext context, int index) {
-                return myBox(data[index]['title'], data[index]['subtitle'],
-                    data[index]['image_url'],data[index]['detail']);
+                return myBox(snapshot.data[index]['title'], snapshot.data[index]['subtitle'],
+                    snapshot.data[index]['image_url'], snapshot.data[index]['detail']);
               },
-              itemCount: data.length,
+              itemCount: snapshot.data.length,
             );
           },
-          future: DefaultAssetBundle.of(context).loadString('assets/data.json'),
+          
         ),
       ),
     );
@@ -47,7 +52,7 @@ class _HomePageState extends State<HomePage> {
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(20),
       //color: Colors.blue[50],
-      height: 180,
+      height: 190,
       decoration: BoxDecoration(
           //color: Colors.blue[50],
 
@@ -82,13 +87,24 @@ class _HomePageState extends State<HomePage> {
           TextButton(
             onPressed: () {
               print("Next Page >>>");
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailPage(v1,v2,v3,v4)));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => DetailPage(v1, v2, v3, v4)));
             },
             child: Text("Read More ->"),
           )
         ],
       ),
     );
+  }
+
+  Future getData() async {
+    // https://raw.githubusercontent.com/CardDev-parche/BasicAPI/main/data.json
+    var url = Uri.https(
+        'raw.githubusercontent.com', '/CardDev-parche/BasicAPI/main/data.json');
+    var response = await http.get(url);
+    var result = json.decode(response.body);
+    return result;
   }
 }
